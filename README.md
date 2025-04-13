@@ -126,6 +126,9 @@ If you find this project useful in your research, please consider citing it:
   title={Attentive Eraser: Unleashing Diffusion Model’s Object Removal Potential via Self-Attention Redirection Guidance},
   author={Sun, Wenhao and Cui, Benlei and Dong, Xue-Mei and Tang, Jingqun},
   booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={19},
+  pages={20734--20742},
   year={2025}
 }
 ```
