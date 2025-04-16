@@ -71,9 +71,9 @@ def preprocess_image(image_path, device):
     image = image.unsqueeze_(0).float() * 2 - 1 # [0,1] --> [-1,1]
     if image.shape[1] != 3:
         image = image.expand(-1, 3, -1, -1)
-        image = F.interpolate(image, (1024, 1024))
-        image = image.to(dtype).to(device)
-        return image
+    image = F.interpolate(image, (1024, 1024))
+    image = image.to(dtype).to(device)
+    return image
 
 def preprocess_mask(mask_path, device):
     mask = to_tensor((load_image(mask_path, convert_method=lambda img: img.convert('L'))))
